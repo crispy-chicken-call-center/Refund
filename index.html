@@ -24,14 +24,11 @@
             --dark-text: #1e293b;
             --border-color: #e2e8f0;
         }
-
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: var(--light-bg);
             color: var(--dark-text);
         }
-
-        /* Header Styles */
         .main-header {
             background: linear-gradient(135deg, var(--primary-color) 0%, #1e40af 100%);
             color: white;
@@ -39,8 +36,6 @@
             margin-bottom: 2rem;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-
-        /* KPI Cards */
         .kpi-card {
             background: white;
             border-radius: 12px;
@@ -50,12 +45,10 @@
             border: 1px solid var(--border-color);
             height: 100%;
         }
-
         .kpi-card:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-
         .kpi-icon {
             width: 48px;
             height: 48px;
@@ -66,24 +59,19 @@
             font-size: 1.5rem;
             margin-bottom: 1rem;
         }
-
         .kpi-icon.primary { background-color: rgba(37, 99, 235, 0.1); color: var(--primary-color); }
         .kpi-icon.success { background-color: rgba(22, 163, 74, 0.1); color: var(--success-color); }
         .kpi-icon.danger { background-color: rgba(220, 38, 38, 0.1); color: var(--danger-color); }
         .kpi-icon.warning { background-color: rgba(245, 158, 11, 0.1); color: var(--warning-color); }
-
         .kpi-value {
             font-size: 2rem;
             font-weight: 700;
             margin: 0.5rem 0;
         }
-
         .kpi-label {
             color: #64748b;
             font-size: 0.875rem;
         }
-
-        /* Action Buttons */
         .action-btn {
             padding: 0.5rem;
             border-radius: 8px;
@@ -92,29 +80,22 @@
             transition: all 0.2s;
             margin: 0 2px;
         }
-
         .action-btn:hover {
             transform: scale(1.1);
         }
-
         .action-btn.edit { background-color: var(--info-color); color: white; }
         .action-btn.delete { background-color: var(--danger-color); color: white; }
         .action-btn.email { background-color: var(--warning-color); color: white; }
         .action-btn.view { background-color: var(--primary-color); color: white; }
-
-        /* Status Badges */
         .status-badge {
             padding: 0.25rem 0.75rem;
             border-radius: 20px;
             font-size: 0.75rem;
             font-weight: 600;
         }
-
         .status-rejected { background-color: #fee2e2; color: var(--danger-color); }
         .status-pending { background-color: #fef3c7; color: var(--warning-color); }
         .status-accepted { background-color: #dcfce7; color: var(--success-color); }
-
-        /* Upload Area */
         .upload-area {
             border: 2px dashed var(--border-color);
             border-radius: 12px;
@@ -124,31 +105,24 @@
             cursor: pointer;
             background-color: white;
         }
-
         .upload-area:hover {
             border-color: var(--primary-color);
             background-color: rgba(37, 99, 235, 0.02);
         }
-
         .upload-area.dragover {
             border-color: var(--primary-color);
             background-color: rgba(37, 99, 235, 0.05);
         }
-
-        /* Progress Bar */
         .progress-container {
             display: none;
             margin-top: 1rem;
         }
-
-        /* Toast Notifications */
         .toast-container {
             position: fixed;
             top: 20px;
             right: 20px;
             z-index: 9999;
         }
-
         .custom-toast {
             background: white;
             border-radius: 8px;
@@ -160,22 +134,17 @@
             min-width: 300px;
             animation: slideIn 0.3s ease;
         }
-
         @keyframes slideIn {
             from { transform: translateX(100%); opacity: 0; }
             to { transform: translateX(0); opacity: 1; }
         }
-
         .toast-icon {
             font-size: 1.5rem;
             margin-right: 1rem;
         }
-
         .toast-success .toast-icon { color: var(--success-color); }
         .toast-error .toast-icon { color: var(--danger-color); }
         .toast-warning .toast-icon { color: var(--warning-color); }
-
-        /* Chart Containers */
         .chart-container {
             background: white;
             border-radius: 12px;
@@ -183,43 +152,32 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
             margin-bottom: 2rem;
         }
-
-        /* Modal Styles */
         .modal-header {
             background-color: var(--primary-color);
             color: white;
         }
-
         .modal-header .btn-close {
             filter: brightness(0) invert(1);
         }
-
-        /* DataTables Customization */
         .dataTables_wrapper .dataTables_filter input {
             border: 1px solid var(--border-color);
             border-radius: 6px;
             padding: 0.5rem;
         }
-
         .dataTables_wrapper .dataTables_length select {
             border: 1px solid var(--border-color);
             border-radius: 6px;
             padding: 0.5rem;
         }
-
-        /* Form Styles */
         .form-control, .form-select {
             border: 1px solid var(--border-color);
             border-radius: 8px;
             padding: 0.75rem;
         }
-
         .form-control:focus, .form-select:focus {
             border-color: var(--primary-color);
             box-shadow: 0 0 0 0.25rem rgba(37, 99, 235, 0.25);
         }
-
-        /* Buttons */
         .btn-primary {
             background-color: var(--primary-color);
             border-color: var(--primary-color);
@@ -227,12 +185,10 @@
             padding: 0.75rem 1.5rem;
             font-weight: 500;
         }
-
         .btn-primary:hover {
             background-color: #1d4ed8;
             border-color: #1d4ed8;
         }
-
         .btn-success {
             background-color: var(--success-color);
             border-color: var(--success-color);
@@ -240,7 +196,6 @@
             padding: 0.75rem 1.5rem;
             font-weight: 500;
         }
-
         .btn-danger {
             background-color: var(--danger-color);
             border-color: var(--danger-color);
@@ -248,8 +203,6 @@
             padding: 0.75rem 1.5rem;
             font-weight: 500;
         }
-
-        /* Section Headers */
         .section-header {
             background: white;
             border-radius: 12px;
@@ -257,8 +210,6 @@
             margin-bottom: 2rem;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
-
-        /* Loading Spinner */
         .spinner-container {
             display: none;
             position: fixed;
@@ -271,12 +222,51 @@
             justify-content: center;
             align-items: center;
         }
-
         .spinner-content {
             background: white;
             padding: 2rem;
             border-radius: 12px;
             text-align: center;
+            position: relative;
+        }
+        .force-close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #dc2626;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .force-close-btn:hover {
+            background: #b91c1c;
+        }
+        .emergency-reset {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #dc2626;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 24px;
+            z-index: 10000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            display: none;
+        }
+        .emergency-reset:hover {
+            background: #b91c1c;
+            transform: scale(1.1);
+        }
+        .emergency-reset.show {
+            display: block;
         }
     </style>
 </head>
@@ -284,16 +274,22 @@
     <!-- Loading Spinner -->
     <div class="spinner-container d-flex" id="loadingSpinner">
         <div class="spinner-content">
+            <button class="force-close-btn" onclick="forceCloseLoading()" title="Force Close">×</button>
             <div class="spinner-border text-primary mb-3" role="status">
                 <span class="visually-hidden">Loading...</span>
             </div>
-            <p>Processing...</p>
+            <p id="loadingText">Processing...</p>
         </div>
     </div>
-
+    
+    <!-- Emergency Reset Button -->
+    <button class="emergency-reset" id="emergencyReset" onclick="emergencyReset()" title="Emergency Reset">
+        <i class="bi bi-arrow-clockwise"></i>
+    </button>
+    
     <!-- Toast Container -->
     <div class="toast-container" id="toastContainer"></div>
-
+    
     <!-- Header -->
     <header class="main-header">
         <div class="container">
@@ -306,11 +302,14 @@
                     <button class="btn btn-light" onclick="downloadTemplate()">
                         <i class="bi bi-download me-2"></i>Download Excel Template
                     </button>
+                    <button class="btn btn-outline-light ms-2" onclick="showSystemInfo()">
+                        <i class="bi bi-info-circle"></i>
+                    </button>
                 </div>
             </div>
         </div>
     </header>
-
+    
     <div class="container">
         <!-- KPI Dashboard -->
         <div class="row mb-4">
@@ -351,7 +350,7 @@
                 </div>
             </div>
         </div>
-
+        
         <!-- Upload Section -->
         <div class="section-header">
             <div class="row align-items-center">
@@ -380,7 +379,7 @@
                 </div>
             </div>
         </div>
-
+        
         <!-- Filters Section -->
         <div class="section-header">
             <div class="row g-3">
@@ -434,7 +433,7 @@
                 </div>
             </div>
         </div>
-
+        
         <!-- Data Table -->
         <div class="section-header">
             <div class="d-flex justify-content-between align-items-center mb-3">
@@ -471,7 +470,7 @@
                 </table>
             </div>
         </div>
-
+        
         <!-- Charts Section -->
         <div class="row">
             <div class="col-md-6">
@@ -488,7 +487,7 @@
             </div>
         </div>
     </div>
-
+    
     <!-- Details Modal -->
     <div class="modal fade" id="detailsModal" tabindex="-1">
         <div class="modal-dialog modal-lg">
@@ -506,7 +505,7 @@
             </div>
         </div>
     </div>
-
+    
     <!-- Edit Modal -->
     <div class="modal fade" id="editModal" tabindex="-1">
         <div class="modal-dialog modal-lg">
@@ -584,7 +583,7 @@
             </div>
         </div>
     </div>
-
+    
     <!-- Email Modal -->
     <div class="modal fade" id="emailModal" tabindex="-1">
         <div class="modal-dialog modal-lg">
@@ -618,7 +617,7 @@
             </div>
         </div>
     </div>
-
+    
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
@@ -628,8 +627,16 @@
     <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.31/jspdf.plugin.autotable.min.js"></script>
-
+    
     <script>
+        // Simple global state
+        let isLoading = false;
+        let refunds = [];
+        let dataTable = null;
+        let reasonsChart = null;
+        let branchesChart = null;
+        let loadingTimeout = null;
+        
         // Sample data
         const sampleData = [
             {
@@ -693,260 +700,421 @@
                 notes: "Verified from video"
             }
         ];
-
-        // Global variables
-        let refunds = [...sampleData];
-        let dataTable;
-        let reasonsChart;
-        let branchesChart;
-
-        // Initialize the application
-        $(document).ready(function() {
-            loadDataFromStorage();
-            initializeDataTable();
-            initializeCharts();
-            updateKPIs();
-            setupEventListeners();
-            setDefaultDate();
-        });
-
-        // Load data from localStorage
-        function loadDataFromStorage() {
-            const stored = localStorage.getItem('refundData');
-            if (stored) {
-                refunds = JSON.parse(stored);
+        
+        // Show loading with timeout
+        function showLoading(text = 'Processing...') {
+            if (isLoading) return;
+            
+            isLoading = true;
+            const spinner = document.getElementById('loadingSpinner');
+            const loadingText = document.getElementById('loadingText');
+            const emergencyReset = document.getElementById('emergencyReset');
+            
+            if (spinner) spinner.style.display = 'flex';
+            if (loadingText) loadingText.textContent = text;
+            if (emergencyReset) emergencyReset.classList.add('show');
+            
+            // Auto-hide after 10 seconds
+            if (loadingTimeout) clearTimeout(loadingTimeout);
+            loadingTimeout = setTimeout(() => {
+                hideLoading();
+                showToast('Warning', 'Operation timed out', 'warning');
+            }, 10000);
+        }
+        
+        // Hide loading
+        function hideLoading() {
+            isLoading = false;
+            const spinner = document.getElementById('loadingSpinner');
+            const emergencyReset = document.getElementById('emergencyReset');
+            
+            if (spinner) spinner.style.display = 'none';
+            if (emergencyReset) emergencyReset.classList.remove('show');
+            
+            if (loadingTimeout) {
+                clearTimeout(loadingTimeout);
+                loadingTimeout = null;
             }
         }
-
-        // Save data to localStorage
+        
+        // Force close loading
+        function forceCloseLoading() {
+            hideLoading();
+            showToast('Info', 'Loading closed by user', 'info');
+        }
+        
+        // Emergency reset
+        function emergencyReset() {
+            hideLoading();
+            refunds = [...sampleData];
+            try {
+                initializeDataTable();
+                initializeCharts();
+                updateKPIs();
+                showToast('Success', 'System reset successfully', 'success');
+            } catch (e) {
+                showToast('Error', 'Failed to reset system', 'error');
+            }
+        }
+        
+        // Show toast
+        function showToast(title, message, type = 'info') {
+            const toast = document.createElement('div');
+            toast.className = `custom-toast toast-${type}`;
+            
+            const iconMap = {
+                'success': 'bi-check-circle-fill',
+                'error': 'bi-x-circle-fill',
+                'warning': 'bi-exclamation-triangle-fill',
+                'info': 'bi-info-circle-fill'
+            };
+            
+            toast.innerHTML = `
+                <div class="toast-icon">
+                    <i class="bi ${iconMap[type]}"></i>
+                </div>
+                <div class="toast-message">
+                    <div class="fw-bold">${title}</div>
+                    <div>${message}</div>
+                </div>
+            `;
+            
+            const toastContainer = document.getElementById('toastContainer');
+            if (toastContainer) {
+                toastContainer.appendChild(toast);
+            }
+            
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                setTimeout(() => {
+                    if (toast.parentNode) {
+                        toast.parentNode.removeChild(toast);
+                    }
+                }, 300);
+            }, 5000);
+        }
+        
+        // Load data from storage
+        function loadDataFromStorage() {
+            try {
+                const stored = localStorage.getItem('refundData');
+                if (stored) {
+                    refunds = JSON.parse(stored);
+                } else {
+                    refunds = [...sampleData];
+                }
+            } catch (e) {
+                refunds = [...sampleData];
+            }
+        }
+        
+        // Save data to storage
         function saveDataToStorage() {
-            localStorage.setItem('refundData', JSON.stringify(refunds));
+            try {
+                localStorage.setItem('refundData', JSON.stringify(refunds));
+            } catch (e) {
+                console.error('Error saving data:', e);
+            }
         }
-
-        // Set default date to today
-        function setDefaultDate() {
-            const today = new Date().toISOString().split('T')[0];
-            document.getElementById('dateFilter').value = today;
-        }
-
+        
         // Initialize DataTable
         function initializeDataTable() {
-            dataTable = $('#refundsTable').DataTable({
-                data: refunds,
-                columns: [
-                    { data: 'orderId' },
-                    { data: 'branch' },
-                    { 
-                        data: 'orderDate',
-                        render: function(data) {
-                            return new Date(data).toLocaleString();
-                        }
-                    },
-                    { 
-                        data: 'refundDate',
-                        render: function(data) {
-                            return new Date(data).toLocaleString();
-                        }
-                    },
-                    { 
-                        data: 'basketAmount',
-                        render: function(data) {
-                            return 'AED ' + data.toFixed(2);
-                        }
-                    },
-                    { 
-                        data: 'refundAmount',
-                        render: function(data) {
-                            return 'AED ' + data.toFixed(2);
-                        }
-                    },
-                    { data: 'reason' },
-                    { 
-                        data: 'status',
-                        render: function(data) {
-                            const statusMap = {
-                                'Rejected': '<span class="status-badge status-rejected">Rejected</span>',
-                                'Pending': '<span class="status-badge status-pending">Pending</span>',
-                                'Accepted': '<span class="status-badge status-accepted">Accepted</span>'
-                            };
-                            return statusMap[data] || data;
-                        }
-                    },
-                    {
-                        data: null,
-                        render: function(data, type, row) {
-                            return `
-                                <button class="action-btn view" onclick="viewDetails(${row.id})" title="View">
-                                    <i class="bi bi-eye"></i>
-                                </button>
-                                <button class="action-btn edit" onclick="editRefund(${row.id})" title="Edit">
-                                    <i class="bi bi-pencil"></i>
-                                </button>
-                                <button class="action-btn email" onclick="prepareEmail(${row.id})" title="Send Email">
-                                    <i class="bi bi-envelope"></i>
-                                </button>
-                                <button class="action-btn delete" onclick="deleteRefund(${row.id})" title="Delete">
-                                    <i class="bi bi-trash"></i>
-                                </button>
-                            `;
-                        }
-                    }
-                ],
-                pageLength: 10,
-                responsive: true,
-                dom: '<"row"<"col-sm-6"l><"col-sm-6"f>>' +
-                     '<"row"<"col-sm-12"tr>>' +
-                     '<"row"<"col-sm-5"i><"col-sm-7"p>>',
-                initComplete: function() {
-                    updateRecordCount();
+            try {
+                if (dataTable) {
+                    dataTable.destroy();
                 }
-            });
-
-            // Update record count on draw
-            dataTable.on('draw', function() {
-                updateRecordCount();
-            });
+                
+                dataTable = $('#refundsTable').DataTable({
+                    data: refunds,
+                    columns: [
+                        { data: 'orderId' },
+                        { data: 'branch' },
+                        { 
+                            data: 'orderDate',
+                            render: function(data) {
+                                return new Date(data).toLocaleString();
+                            }
+                        },
+                        { 
+                            data: 'refundDate',
+                            render: function(data) {
+                                return new Date(data).toLocaleString();
+                            }
+                        },
+                        { 
+                            data: 'basketAmount',
+                            render: function(data) {
+                                return 'AED ' + data.toFixed(2);
+                            }
+                        },
+                        { 
+                            data: 'refundAmount',
+                            render: function(data) {
+                                return 'AED ' + data.toFixed(2);
+                            }
+                        },
+                        { data: 'reason' },
+                        { 
+                            data: 'status',
+                            render: function(data) {
+                                const statusMap = {
+                                    'Rejected': '<span class="status-badge status-rejected">Rejected</span>',
+                                    'Pending': '<span class="status-badge status-pending">Pending</span>',
+                                    'Accepted': '<span class="status-badge status-accepted">Accepted</span>'
+                                };
+                                return statusMap[data] || data;
+                            }
+                        },
+                        {
+                            data: null,
+                            render: function(data, type, row) {
+                                return `
+                                    <button class="action-btn view" onclick="viewDetails(${row.id})" title="View">
+                                        <i class="bi bi-eye"></i>
+                                    </button>
+                                    <button class="action-btn edit" onclick="editRefund(${row.id})" title="Edit">
+                                        <i class="bi bi-pencil"></i>
+                                    </button>
+                                    <button class="action-btn email" onclick="prepareEmail(${row.id})" title="Send Email">
+                                        <i class="bi bi-envelope"></i>
+                                    </button>
+                                    <button class="action-btn delete" onclick="deleteRefund(${row.id})" title="Delete">
+                                        <i class="bi bi-trash"></i>
+                                    </button>
+                                `;
+                            }
+                        }
+                    ],
+                    pageLength: 10,
+                    responsive: true,
+                    dom: '<"row"<"col-sm-6"l><"col-sm-6"f>>' +
+                         '<"row"<"col-sm-12"tr>>' +
+                         '<"row"<"col-sm-5"i><"col-sm-7"p>>',
+                    initComplete: function() {
+                        updateRecordCount();
+                    }
+                });
+                
+                dataTable.on('draw', function() {
+                    updateRecordCount();
+                });
+            } catch (e) {
+                console.error('Error initializing DataTable:', e);
+            }
         }
-
+        
         // Update record count
         function updateRecordCount() {
-            const count = dataTable.data().length;
-            document.getElementById('recordCount').textContent = `${count} records`;
+            try {
+                const count = dataTable.data().length;
+                const recordCount = document.getElementById('recordCount');
+                if (recordCount) {
+                    recordCount.textContent = `${count} records`;
+                }
+            } catch (e) {
+                console.error('Error updating record count:', e);
+            }
         }
-
+        
         // Initialize Charts
         function initializeCharts() {
-            // Reasons Chart
-            const reasonsCtx = document.getElementById('reasonsChart').getContext('2d');
-            reasonsChart = new Chart(reasonsCtx, {
-                type: 'pie',
-                data: {
-                    labels: [],
-                    datasets: [{
-                        data: [],
-                        backgroundColor: [
-                            '#2563eb',
-                            '#16a34a',
-                            '#dc2626',
-                            '#f59e0b',
-                            '#8b5cf6',
-                            '#ec4899',
-                            '#14b8a6'
-                        ]
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: {
-                            position: 'bottom'
-                        }
-                    }
+            try {
+                // Reasons Chart
+                const reasonsCtx = document.getElementById('reasonsChart').getContext('2d');
+                if (reasonsChart) {
+                    reasonsChart.destroy();
                 }
-            });
-
-            // Branches Chart
-            const branchesCtx = document.getElementById('branchesChart').getContext('2d');
-            branchesChart = new Chart(branchesCtx, {
-                type: 'bar',
-                data: {
-                    labels: [],
-                    datasets: [{
-                        label: 'Number of Refunds',
-                        data: [],
-                        backgroundColor: '#2563eb'
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    scales: {
-                        y: {
-                            beginAtZero: true,
-                            ticks: {
-                                stepSize: 1
+                
+                reasonsChart = new Chart(reasonsCtx, {
+                    type: 'pie',
+                    data: {
+                        labels: [],
+                        datasets: [{
+                            data: [],
+                            backgroundColor: [
+                                '#2563eb',
+                                '#16a34a',
+                                '#dc2626',
+                                '#f59e0b',
+                                '#8b5cf6',
+                                '#ec4899',
+                                '#14b8a6'
+                            ]
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'bottom'
                             }
                         }
                     }
+                });
+                
+                // Branches Chart
+                const branchesCtx = document.getElementById('branchesChart').getContext('2d');
+                if (branchesChart) {
+                    branchesChart.destroy();
                 }
-            });
-
-            updateCharts();
+                
+                branchesChart = new Chart(branchesCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: [],
+                        datasets: [{
+                            label: 'Number of Refunds',
+                            data: [],
+                            backgroundColor: '#2563eb'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                ticks: {
+                                    stepSize: 1
+                                }
+                            }
+                        }
+                    }
+                });
+                
+                updateCharts();
+            } catch (e) {
+                console.error('Error initializing charts:', e);
+            }
         }
-
+        
         // Update Charts
         function updateCharts() {
-            // Update reasons chart
-            const reasonCounts = {};
-            refunds.forEach(refund => {
-                reasonCounts[refund.reason] = (reasonCounts[refund.reason] || 0) + 1;
-            });
-
-            reasonsChart.data.labels = Object.keys(reasonCounts);
-            reasonsChart.data.datasets[0].data = Object.values(reasonCounts);
-            reasonsChart.update();
-
-            // Update branches chart
-            const branchCounts = {};
-            refunds.forEach(refund => {
-                branchCounts[refund.branch] = (branchCounts[refund.branch] || 0) + 1;
-            });
-
-            branchesChart.data.labels = Object.keys(branchCounts);
-            branchesChart.data.datasets[0].data = Object.values(branchCounts);
-            branchesChart.update();
+            try {
+                // Update reasons chart
+                const reasonCounts = {};
+                refunds.forEach(refund => {
+                    reasonCounts[refund.reason] = (reasonCounts[refund.reason] || 0) + 1;
+                });
+                reasonsChart.data.labels = Object.keys(reasonCounts);
+                reasonsChart.data.datasets[0].data = Object.values(reasonCounts);
+                reasonsChart.update();
+                
+                // Update branches chart
+                const branchCounts = {};
+                refunds.forEach(refund => {
+                    branchCounts[refund.branch] = (branchCounts[refund.branch] || 0) + 1;
+                });
+                branchesChart.data.labels = Object.keys(branchCounts);
+                branchesChart.data.datasets[0].data = Object.values(branchCounts);
+                branchesChart.update();
+            } catch (e) {
+                console.error('Error updating charts:', e);
+            }
         }
-
+        
         // Update KPIs
         function updateKPIs() {
-            document.getElementById('totalRefunds').textContent = refunds.length;
-            document.getElementById('rejectedRefunds').textContent = refunds.filter(r => r.status === 'Rejected').length;
-            document.getElementById('pendingRefunds').textContent = refunds.filter(r => r.status === 'Pending').length;
-            
-            const totalSavings = refunds
-                .filter(r => r.status === 'Rejected')
-                .reduce((sum, r) => sum + r.refundAmount, 0);
-            document.getElementById('totalSavings').textContent = totalSavings.toFixed(2);
+            try {
+                const totalRefunds = document.getElementById('totalRefunds');
+                const rejectedRefunds = document.getElementById('rejectedRefunds');
+                const pendingRefunds = document.getElementById('pendingRefunds');
+                const totalSavings = document.getElementById('totalSavings');
+                
+                if (totalRefunds) totalRefunds.textContent = refunds.length;
+                if (rejectedRefunds) rejectedRefunds.textContent = refunds.filter(r => r.status === 'Rejected').length;
+                if (pendingRefunds) pendingRefunds.textContent = refunds.filter(r => r.status === 'Pending').length;
+                
+                const savings = refunds
+                    .filter(r => r.status === 'Rejected')
+                    .reduce((sum, r) => sum + r.refundAmount, 0);
+                if (totalSavings) totalSavings.textContent = savings.toFixed(2);
+            } catch (e) {
+                console.error('Error updating KPIs:', e);
+            }
         }
-
+        
         // Setup Event Listeners
         function setupEventListeners() {
-            // Drag and drop
-            const uploadArea = document.querySelector('.upload-area');
-            
-            uploadArea.addEventListener('dragover', (e) => {
-                e.preventDefault();
-                uploadArea.classList.add('dragover');
-            });
-            
-            uploadArea.addEventListener('dragleave', () => {
-                uploadArea.classList.remove('dragover');
-            });
-            
-            uploadArea.addEventListener('drop', (e) => {
-                e.preventDefault();
-                uploadArea.classList.remove('dragover');
+            try {
+                const uploadArea = document.querySelector('.upload-area');
                 
-                const files = e.dataTransfer.files;
-                if (files.length > 0) {
-                    processExcelFile(files[0], e);
+                if (uploadArea) {
+                    uploadArea.addEventListener('dragover', (e) => {
+                        e.preventDefault();
+                        uploadArea.classList.add('dragover');
+                    });
+                    
+                    uploadArea.addEventListener('dragleave', () => {
+                        uploadArea.classList.remove('dragover');
+                    });
+                    
+                    uploadArea.addEventListener('drop', (e) => {
+                        e.preventDefault();
+                        uploadArea.classList.remove('dragover');
+                        
+                        const files = e.dataTransfer.files;
+                        if (files.length > 0) {
+                            processExcelFile(files[0], e);
+                        }
+                    });
                 }
-            });
+            } catch (e) {
+                console.error('Error setting up event listeners:', e);
+            }
         }
-
-        // Handle file upload - Updated version
+        
+        // Set default date
+        function setDefaultDate() {
+            try {
+                const today = new Date().toISOString().split('T')[0];
+                const dateFilter = document.getElementById('dateFilter');
+                if (dateFilter) {
+                    dateFilter.value = today;
+                }
+            } catch (e) {
+                console.error('Error setting default date:', e);
+            }
+        }
+        
+        // Initialize app
+        function initializeApp() {
+            showLoading('Initializing...');
+            
+            setTimeout(() => {
+                try {
+                    loadDataFromStorage();
+                    initializeDataTable();
+                    initializeCharts();
+                    updateKPIs();
+                    setupEventListeners();
+                    setDefaultDate();
+                    
+                    hideLoading();
+                    showToast('Success', 'Application loaded successfully', 'success');
+                } catch (e) {
+                    console.error('Error initializing app:', e);
+                    hideLoading();
+                    showToast('Error', 'Error initializing application', 'error');
+                }
+            }, 500);
+        }
+        
+        // Handle file upload
         function handleFileUpload(event) {
             const file = event.target.files[0];
             if (file) {
                 processExcelFile(file, event);
             }
         }
-
-        // Process Excel file - Updated version
+        
+        // Process Excel file
         function processExcelFile(file, event) {
-            showProgress();
+            showLoading('Reading file...');
+            
             const reader = new FileReader();
+            
             reader.onload = function (e) {
                 try {
                     const data = new Uint8Array(e.target.result);
@@ -955,17 +1123,22 @@
                     const sheet = workbook.Sheets[sheetName];
                     const jsonData = XLSX.utils.sheet_to_json(sheet, { defval: '' });
                     
-                    // Validate required columns
+                    if (!jsonData || jsonData.length === 0) {
+                        showToast('Error', 'The Excel file is empty', 'error');
+                        hideLoading();
+                        return;
+                    }
+                    
                     const requiredColumns = ['Branch', 'Order Date', 'Refund Date', 'Basket Amount', 'Refund Amount', 'Reason', 'Status'];
                     const firstRow = jsonData[0] || {};
                     const missingColumns = requiredColumns.filter(col => !(col in firstRow));
                     
                     if (missingColumns.length > 0) {
-                        showToast('Error', `Missing required columns: ${missingColumns.join(', ')}`, 'error');
+                        showToast('Error', `Missing columns: ${missingColumns.join(', ')}`, 'error');
+                        hideLoading();
                         return;
                     }
                     
-                    // Process data
                     let addedCount = 0;
                     const maxId = refunds.length > 0 ? Math.max(...refunds.map(r => r.id)) : 0;
                     let newId = maxId + 1;
@@ -988,30 +1161,34 @@
                         addedCount++;
                     });
                     
-                    // Save and update
                     saveDataToStorage();
-                    updateDataTable();
+                    initializeDataTable();
                     updateKPIs();
                     updateCharts();
                     
-                    showToast('Success', `Successfully imported ${addedCount} records`, 'success');
+                    showToast('Success', `Imported ${addedCount} records`, 'success');
+                    hideLoading();
                     
-                } catch (err) {
-                    console.error("Error reading Excel file:", err);
-                    showToast('Error', 'Error reading Excel file: ' + err.message, 'error');
-                } finally {
-                    hideProgress();
+                } catch (e) {
+                    console.error('Error processing Excel file:', e);
+                    showToast('Error', 'Error processing Excel file', 'error');
+                    hideLoading();
                 }
             };
+            
+            reader.onerror = function () {
+                showToast('Error', 'Error reading file', 'error');
+                hideLoading();
+            };
+            
             reader.readAsArrayBuffer(file);
             
-            // Reset file input
             if (event && event.target) {
                 event.target.value = '';
             }
         }
-
-        // Parse date from Excel
+        
+        // Parse date
         function parseDate(dateValue) {
             if (!dateValue) return new Date().toISOString();
             
@@ -1023,119 +1200,93 @@
             const date = new Date(dateValue);
             return isNaN(date.getTime()) ? new Date().toISOString() : date.toISOString();
         }
-
+        
         // Generate Order ID
         function generateOrderId() {
             return 'ORD-' + Math.floor(100000000 + Math.random() * 900000000);
         }
-
-        // Show progress
-        function showProgress() {
-            document.getElementById('progressContainer').style.display = 'block';
-            document.getElementById('loadingSpinner').style.display = 'flex';
-            
-            // Simulate progress
-            let progress = 0;
-            const interval = setInterval(() => {
-                progress += 10;
-                document.querySelector('.progress-bar').style.width = progress + '%';
-                
-                if (progress >= 100) {
-                    clearInterval(interval);
-                }
-            }, 100);
-        }
-
-        // Hide progress
-        function hideProgress() {
-            document.getElementById('progressContainer').style.display = 'none';
-            document.getElementById('loadingSpinner').style.display = 'none';
-            document.querySelector('.progress-bar').style.width = '0%';
-        }
-
-        // Update DataTable
-        function updateDataTable() {
-            dataTable.clear();
-            dataTable.rows.add(refunds);
-            dataTable.draw();
-        }
-
+        
         // Apply filters
         function applyFilters() {
-            const branch = document.getElementById('branchFilter').value;
-            const reason = document.getElementById('reasonFilter').value;
-            const status = document.getElementById('statusFilter').value;
-            const date = document.getElementById('dateFilter').value;
-            
-            let filtered = refunds;
-            
-            if (branch) {
-                filtered = filtered.filter(r => r.branch === branch);
+            try {
+                const branch = document.getElementById('branchFilter').value;
+                const reason = document.getElementById('reasonFilter').value;
+                const status = document.getElementById('statusFilter').value;
+                const date = document.getElementById('dateFilter').value;
+                
+                let filtered = refunds;
+                
+                if (branch) filtered = filtered.filter(r => r.branch === branch);
+                if (reason) filtered = filtered.filter(r => r.reason === reason);
+                if (status) filtered = filtered.filter(r => r.status === status);
+                if (date) {
+                    filtered = filtered.filter(r => {
+                        const refundDate = new Date(r.refundDate).toISOString().split('T')[0];
+                        return refundDate === date;
+                    });
+                }
+                
+                dataTable.clear();
+                dataTable.rows.add(filtered);
+                dataTable.draw();
+            } catch (e) {
+                console.error('Error applying filters:', e);
             }
-            
-            if (reason) {
-                filtered = filtered.filter(r => r.reason === reason);
-            }
-            
-            if (status) {
-                filtered = filtered.filter(r => r.status === status);
-            }
-            
-            if (date) {
-                filtered = filtered.filter(r => {
-                    const refundDate = new Date(r.refundDate).toISOString().split('T')[0];
-                    return refundDate === date;
-                });
-            }
-            
-            dataTable.clear();
-            dataTable.rows.add(filtered);
-            dataTable.draw();
         }
-
+        
         // Reset filters
         function resetFilters() {
-            document.getElementById('branchFilter').value = '';
-            document.getElementById('reasonFilter').value = '';
-            document.getElementById('statusFilter').value = '';
-            document.getElementById('dateFilter').value = '';
-            
-            updateDataTable();
+            try {
+                document.getElementById('branchFilter').value = '';
+                document.getElementById('reasonFilter').value = '';
+                document.getElementById('statusFilter').value = '';
+                document.getElementById('dateFilter').value = '';
+                
+                dataTable.clear();
+                dataTable.rows.add(refunds);
+                dataTable.draw();
+            } catch (e) {
+                console.error('Error resetting filters:', e);
+            }
         }
-
-        // View details - Updated version
+        
+        // View details
         function viewDetails(id) {
-            const refund = refunds.find(r => r.id === id);
-            if (!refund) return;
-            
-            // Create details HTML
-            const details = `
-                <div class="row">
-                    <div class="col-md-6">
-                        <p><strong>Order ID:</strong> ${refund.orderId}</p>
-                        <p><strong>Branch:</strong> ${refund.branch}</p>
-                        <p><strong>Order Date:</strong> ${new Date(refund.orderDate).toLocaleString()}</p>
-                        <p><strong>Refund Date:</strong> ${new Date(refund.refundDate).toLocaleString()}</p>
+            try {
+                const refund = refunds.find(r => r.id === id);
+                if (!refund) return;
+                
+                const details = `
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>Order ID:</strong> ${refund.orderId}</p>
+                            <p><strong>Branch:</strong> ${refund.branch}</p>
+                            <p><strong>Order Date:</strong> ${new Date(refund.orderDate).toLocaleString()}</p>
+                            <p><strong>Refund Date:</strong> ${new Date(refund.refundDate).toLocaleString()}</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><strong>Basket Amount:</strong> AED ${refund.basketAmount.toFixed(2)}</p>
+                            <p><strong>Refund Amount:</strong> AED ${refund.refundAmount.toFixed(2)}</p>
+                            <p><strong>Reason:</strong> ${refund.reason}</p>
+                            <p><strong>Status:</strong> ${getStatusBadge(refund.status)}</p>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <p><strong>Basket Amount:</strong> AED ${refund.basketAmount.toFixed(2)}</p>
-                        <p><strong>Refund Amount:</strong> AED ${refund.refundAmount.toFixed(2)}</p>
-                        <p><strong>Reason:</strong> ${refund.reason}</p>
-                        <p><strong>Status:</strong> ${getStatusBadge(refund.status)}</p>
-                    </div>
-                </div>
-                ${refund.notes ? `<div class="mt-3"><p><strong>Notes:</strong> ${refund.notes}</p></div>` : ''}
-            `;
-            
-            // Update modal content
-            document.getElementById('detailsModalBody').innerHTML = details;
-            
-            // Show modal
-            const modal = new bootstrap.Modal(document.getElementById('detailsModal'));
-            modal.show();
+                    ${refund.notes ? `<div class="mt-3"><p><strong>Notes:</strong> ${refund.notes}</p></div>` : ''}
+                `;
+                
+                const detailsModalBody = document.getElementById('detailsModalBody');
+                if (detailsModalBody) {
+                    detailsModalBody.innerHTML = details;
+                }
+                
+                const modal = new bootstrap.Modal(document.getElementById('detailsModal'));
+                modal.show();
+            } catch (e) {
+                console.error('Error viewing details:', e);
+            }
         }
-
-        // Helper function to get status badge HTML
+        
+        // Get status badge
         function getStatusBadge(status) {
             const statusMap = {
                 'Rejected': '<span class="status-badge status-rejected">Rejected</span>',
@@ -1144,193 +1295,226 @@
             };
             return statusMap[status] || status;
         }
-
-        // Edit refund - Updated version
+        
+        // Edit refund
         function editRefund(id) {
-            const refund = refunds.find(r => r.id === id);
-            if (!refund) return;
-            
-            // Populate edit form
-            document.getElementById('editOrderId').value = refund.orderId;
-            document.getElementById('editBranch').value = refund.branch;
-            document.getElementById('editOrderDate').value = refund.orderDate.slice(0, 16);
-            document.getElementById('editRefundDate').value = refund.refundDate.slice(0, 16);
-            document.getElementById('editBasketAmount').value = refund.basketAmount;
-            document.getElementById('editRefundAmount').value = refund.refundAmount;
-            document.getElementById('editReason').value = refund.reason;
-            document.getElementById('editStatus').value = refund.status;
-            document.getElementById('editNotes').value = refund.notes || '';
-            document.getElementById('editId').value = refund.id;
-            
-            // Show edit modal
-            const modal = new bootstrap.Modal(document.getElementById('editModal'));
-            modal.show();
+            try {
+                const refund = refunds.find(r => r.id === id);
+                if (!refund) return;
+                
+                document.getElementById('editOrderId').value = refund.orderId;
+                document.getElementById('editBranch').value = refund.branch;
+                document.getElementById('editOrderDate').value = refund.orderDate.slice(0, 16);
+                document.getElementById('editRefundDate').value = refund.refundDate.slice(0, 16);
+                document.getElementById('editBasketAmount').value = refund.basketAmount;
+                document.getElementById('editRefundAmount').value = refund.refundAmount;
+                document.getElementById('editReason').value = refund.reason;
+                document.getElementById('editStatus').value = refund.status;
+                document.getElementById('editNotes').value = refund.notes || '';
+                document.getElementById('editId').value = refund.id;
+                
+                const modal = new bootstrap.Modal(document.getElementById('editModal'));
+                modal.show();
+            } catch (e) {
+                console.error('Error editing refund:', e);
+            }
         }
-
-        // Save edited refund - New function
+        
+        // Save edited refund
         function saveEditedRefund() {
-            const id = parseInt(document.getElementById('editId').value);
-            const refund = refunds.find(r => r.id === id);
-            if (!refund) return;
-            
-            // Update refund data
-            refund.branch = document.getElementById('editBranch').value;
-            refund.orderDate = document.getElementById('editOrderDate').value + ':00';
-            refund.refundDate = document.getElementById('editRefundDate').value + ':00';
-            refund.basketAmount = parseFloat(document.getElementById('editBasketAmount').value);
-            refund.refundAmount = parseFloat(document.getElementById('editRefundAmount').value);
-            refund.reason = document.getElementById('editReason').value;
-            refund.status = document.getElementById('editStatus').value;
-            refund.notes = document.getElementById('editNotes').value;
-            
-            // Save and update
-            saveDataToStorage();
-            updateDataTable();
-            updateKPIs();
-            
-            // Hide modal
-            const modal = bootstrap.Modal.getInstance(document.getElementById('editModal'));
-            modal.hide();
-            
-            showToast('Success', 'Refund updated successfully', 'success');
+            try {
+                const id = parseInt(document.getElementById('editId').value);
+                const refund = refunds.find(r => r.id === id);
+                if (!refund) return;
+                
+                refund.branch = document.getElementById('editBranch').value;
+                refund.orderDate = document.getElementById('editOrderDate').value + ':00';
+                refund.refundDate = document.getElementById('editRefundDate').value + ':00';
+                refund.basketAmount = parseFloat(document.getElementById('editBasketAmount').value);
+                refund.refundAmount = parseFloat(document.getElementById('editRefundAmount').value);
+                refund.reason = document.getElementById('editReason').value;
+                refund.status = document.getElementById('editStatus').value;
+                refund.notes = document.getElementById('editNotes').value;
+                
+                saveDataToStorage();
+                dataTable.clear();
+                dataTable.rows.add(refunds);
+                dataTable.draw();
+                updateKPIs();
+                
+                const modal = bootstrap.Modal.getInstance(document.getElementById('editModal'));
+                modal.hide();
+                
+                showToast('Success', 'Refund updated successfully', 'success');
+            } catch (e) {
+                console.error('Error saving refund:', e);
+                showToast('Error', 'Error saving refund', 'error');
+            }
         }
-
+        
         // Delete refund
         function deleteRefund(id) {
             if (confirm('Are you sure you want to delete this record?')) {
-                refunds = refunds.filter(r => r.id !== id);
-                saveDataToStorage();
-                updateDataTable();
-                updateKPIs();
-                updateCharts();
-                showToast('Success', 'Record deleted successfully', 'success');
+                try {
+                    refunds = refunds.filter(r => r.id !== id);
+                    saveDataToStorage();
+                    dataTable.clear();
+                    dataTable.rows.add(refunds);
+                    dataTable.draw();
+                    updateKPIs();
+                    updateCharts();
+                    
+                    showToast('Success', 'Record deleted successfully', 'success');
+                } catch (e) {
+                    console.error('Error deleting refund:', e);
+                    showToast('Error', 'Error deleting record', 'error');
+                }
             }
         }
-
+        
         // Prepare email
         function prepareEmail(id) {
-            const refund = refunds.find(r => r.id === id);
-            if (refund) {
-                document.getElementById('emailSubject').value = `Response to Refund Request for Order ${refund.orderId}`;
-                document.getElementById('emailBody').value = `Dear Careem Team,\n\nThank you for contacting us regarding order ${refund.orderId}. After reviewing the details with the ${refund.branch} branch, we have confirmed that the order was delivered correctly. Therefore, we request to cancel the applied deduction as there is no eligibility for a refund.\n\nOrder Details:\n- Order ID: ${refund.orderId}\n- Branch: ${refund.branch}\n- Order Date: ${new Date(refund.orderDate).toLocaleString()}\n- Requested Refund Amount: ${refund.refundAmount} AED\n\nBest regards,\nFinance Review Team\nCrispy Chicken - UAE`;
-                
-                const modal = new bootstrap.Modal(document.getElementById('emailModal'));
-                modal.show();
+            try {
+                const refund = refunds.find(r => r.id === id);
+                if (refund) {
+                    document.getElementById('emailSubject').value = `Response to Refund Request for Order ${refund.orderId}`;
+                    document.getElementById('emailBody').value = `Dear Careem Team,\n\nThank you for contacting us regarding order ${refund.orderId}. After reviewing the details with the ${refund.branch} branch, we have confirmed that the order was delivered correctly. Therefore, we request to cancel the applied deduction as there is no eligibility for a refund.\n\nOrder Details:\n- Order ID: ${refund.orderId}\n- Branch: ${refund.branch}\n- Order Date: ${new Date(refund.orderDate).toLocaleString()}\n- Requested Refund Amount: ${refund.refundAmount} AED\n\nBest regards,\nFinance Review Team\nCrispy Chicken - UAE`;
+                    
+                    const modal = new bootstrap.Modal(document.getElementById('emailModal'));
+                    modal.show();
+                }
+            } catch (e) {
+                console.error('Error preparing email:', e);
             }
         }
-
+        
         // Send email
         function sendEmail() {
-            // Simulate sending email
-            showToast('Success', 'Email sent successfully', 'success');
-            
-            const modal = bootstrap.Modal.getInstance(document.getElementById('emailModal'));
-            modal.hide();
+            try {
+                showToast('Success', 'Email sent successfully', 'success');
+                
+                const modal = bootstrap.Modal.getInstance(document.getElementById('emailModal'));
+                modal.hide();
+            } catch (e) {
+                console.error('Error sending email:', e);
+            }
         }
-
+        
         // Export to Excel
         function exportToExcel() {
-            const ws = XLSX.utils.json_to_sheet(refunds.map(r => ({
-                'Order ID': r.orderId,
-                'Branch': r.branch,
-                'Order Date': new Date(r.orderDate).toLocaleString(),
-                'Refund Date': new Date(r.refundDate).toLocaleString(),
-                'Basket Amount': r.basketAmount,
-                'Refund Amount': r.refundAmount,
-                'Reason': r.reason,
-                'Status': r.status,
-                'Notes': r.notes
-            })));
-            
-            const wb = XLSX.utils.book_new();
-            XLSX.utils.book_append_sheet(wb, ws, 'Refunds');
-            
-            const date = new Date().toISOString().split('T')[0];
-            XLSX.writeFile(wb, `Refunds_${date}.xlsx`);
-            
-            showToast('Success', 'Excel file exported successfully', 'success');
+            try {
+                const ws = XLSX.utils.json_to_sheet(refunds.map(r => ({
+                    'Order ID': r.orderId,
+                    'Branch': r.branch,
+                    'Order Date': new Date(r.orderDate).toLocaleString(),
+                    'Refund Date': new Date(r.refundDate).toLocaleString(),
+                    'Basket Amount': r.basketAmount,
+                    'Refund Amount': r.refundAmount,
+                    'Reason': r.reason,
+                    'Status': r.status,
+                    'Notes': r.notes
+                })));
+                
+                const wb = XLSX.utils.book_new();
+                XLSX.utils.book_append_sheet(wb, ws, 'Refunds');
+                
+                const date = new Date().toISOString().split('T')[0];
+                XLSX.writeFile(wb, `Refunds_${date}.xlsx`);
+                
+                showToast('Success', 'Excel exported successfully', 'success');
+            } catch (e) {
+                console.error('Error exporting to Excel:', e);
+                showToast('Error', 'Error exporting to Excel', 'error');
+            }
         }
-
+        
         // Export to PDF
         function exportToPDF() {
-            const { jsPDF } = window.jspdf;
-            const doc = new jsPDF();
-            
-            doc.text('Refund Report', 105, 15, { align: 'center' });
-            
-            const tableData = refunds.map(r => [
-                r.orderId,
-                r.branch,
-                new Date(r.orderDate).toLocaleDateString(),
-                r.basketAmount.toFixed(2),
-                r.refundAmount.toFixed(2),
-                r.reason,
-                r.status
-            ]);
-            
-            doc.autoTable({
-                head: [['Order ID', 'Branch', 'Date', 'Amount', 'Refund', 'Reason', 'Status']],
-                body: tableData
-            });
-            
-            doc.save(`Refunds_${new Date().toISOString().split('T')[0]}.pdf`);
-            
-            showToast('Success', 'PDF file exported successfully', 'success');
+            try {
+                const { jsPDF } = window.jspdf;
+                const doc = new jsPDF();
+                
+                doc.text('Refund Report', 105, 15, { align: 'center' });
+                
+                const tableData = refunds.map(r => [
+                    r.orderId,
+                    r.branch,
+                    new Date(r.orderDate).toLocaleDateString(),
+                    r.basketAmount.toFixed(2),
+                    r.refundAmount.toFixed(2),
+                    r.reason,
+                    r.status
+                ]);
+                
+                doc.autoTable({
+                    head: [['Order ID', 'Branch', 'Date', 'Amount', 'Refund', 'Reason', 'Status']],
+                    body: tableData
+                });
+                
+                doc.save(`Refunds_${new Date().toISOString().split('T')[0]}.pdf`);
+                
+                showToast('Success', 'PDF exported successfully', 'success');
+            } catch (e) {
+                console.error('Error exporting to PDF:', e);
+                showToast('Error', 'Error exporting to PDF', 'error');
+            }
         }
-
+        
         // Download template
         function downloadTemplate() {
-            const template = [
-                {
-                    'Branch': 'Al Barsha 1',
-                    'Order Date': '2025-08-30 20:25',
-                    'Refund Date': '2025-08-30 21:33',
-                    'Basket Amount': 17.05,
-                    'Refund Amount': 15.50,
-                    'Reason': 'Spilled / damaged',
-                    'Status': 'Rejected',
-                    'Notes': 'Verified from video'
-                }
-            ];
-            
-            const ws = XLSX.utils.json_to_sheet(template);
-            const wb = XLSX.utils.book_new();
-            XLSX.utils.book_append_sheet(wb, ws, 'Template');
-            
-            XLSX.writeFile(wb, 'Refund_Template.xlsx');
-            
-            showToast('Success', 'Template downloaded successfully', 'success');
+            try {
+                const template = [
+                    {
+                        'Branch': 'Al Barsha 1',
+                        'Order Date': '2025-08-30 20:25',
+                        'Refund Date': '2025-08-30 21:33',
+                        'Basket Amount': 17.05,
+                        'Refund Amount': 15.50,
+                        'Reason': 'Spilled / damaged',
+                        'Status': 'Rejected',
+                        'Notes': 'Verified from video'
+                    }
+                ];
+                
+                const ws = XLSX.utils.json_to_sheet(template);
+                const wb = XLSX.utils.book_new();
+                XLSX.utils.book_append_sheet(wb, ws, 'Template');
+                
+                XLSX.writeFile(wb, 'Refund_Template.xlsx');
+                
+                showToast('Success', 'Template downloaded successfully', 'success');
+            } catch (e) {
+                console.error('Error downloading template:', e);
+                showToast('Error', 'Error downloading template', 'error');
+            }
         }
-
-        // Show toast notification
-        function showToast(title, message, type = 'info') {
-            const toast = document.createElement('div');
-            toast.className = `custom-toast toast-${type}`;
-            
-            const iconMap = {
-                'success': 'bi-check-circle-fill',
-                'error': 'bi-x-circle-fill',
-                'warning': 'bi-exclamation-triangle-fill',
-                'info': 'bi-info-circle-fill'
-            };
-            
-            toast.innerHTML = `
-                <div class="toast-icon">
-                    <i class="bi ${iconMap[type]}"></i>
-                </div>
-                <div class="toast-message">
-                    <div class="fw-bold">${title}</div>
-                    <div>${message}</div>
-                </div>
+        
+        // Show system info
+        function showSystemInfo() {
+            const info = `
+                System Information:
+                - Records: ${refunds.length}
+                - DataTable: ${dataTable ? 'Loaded' : 'Not Loaded'}
+                - Charts: ${reasonsChart && branchesChart ? 'Loaded' : 'Not Loaded'}
             `;
-            
-            document.getElementById('toastContainer').appendChild(toast);
-            
-            setTimeout(() => {
-                toast.style.opacity = '0';
-                setTimeout(() => toast.remove(), 300);
-            }, 5000);
+            alert(info);
         }
+        
+        // Initialize when DOM is ready
+        $(document).ready(function() {
+            initializeApp();
+        });
+        
+        // Global error handlers
+        window.addEventListener('error', function(e) {
+            console.error('Global error:', e.error);
+            hideLoading();
+        });
+        
+        window.addEventListener('unhandledrejection', function(e) {
+            console.error('Unhandled promise rejection:', e.reason);
+            hideLoading();
+        });
     </script>
 </body>
 </html>
